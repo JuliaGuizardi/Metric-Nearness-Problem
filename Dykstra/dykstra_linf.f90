@@ -18,7 +18,7 @@ program dykstra_solution_l1
     character(len = 80)     :: inputfnm
     write(*, *) 'Enter the input file: '
     read(*,'(A)') inputfnm  
-    !inputfnm = 'test3_8.txt'  
+    !inputfnm = ''  
 
     open(10, file = trim(adjustl(inputfnm)), status = "old", action = "read")
     
@@ -500,7 +500,7 @@ contains
         !Prompt for the output file
         write(*,*) 'Enter the output file: '
         read(*,'(A)') outputfnm
-        !outputfnm = 'dykstra_linf.txt'
+        !outputfnm = ''
 
         unit_number = 10
 
