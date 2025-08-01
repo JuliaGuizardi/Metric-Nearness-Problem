@@ -17,7 +17,7 @@ program dykstra_solution_l2
     character(len = 80)     :: inputfnm
     write(*, *) 'Enter the input file: '
     read(*,'(A)') inputfnm  
-    inputfnm = ''
+    !inputfnm = ''
 
     open(10, file = trim(adjustl(inputfnm)), status = "old", action = "read")
     
